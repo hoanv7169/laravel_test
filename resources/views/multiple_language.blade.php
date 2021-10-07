@@ -28,6 +28,15 @@
     <hr>
 
     <h3>{{ __('Welcome to Website!') }}</h3>
+    <br>
+
+    <h3>
+        {{ __("Your name: $username") }}
+        {{ __(
+        '`:username`, Age `:age`',
+        ['username' => $username, 'age' => $age]
+    ) }}
+    </h3>
 </div>
 
 </body>

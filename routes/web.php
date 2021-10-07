@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\MultipleController;
 use App\Http\Controllers\LanguageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +28,7 @@ Route::put('/customers/update', [CustomerController::class, 'update'])->name('cu
 Route::view('/dom', 'dom');
 
 Route::group(['middleware' => 'locale'], function() {
-    Route::view('/multiple_language', 'multiple_language');
+    Route::get('/multiple_language', [MultipleController::class, 'index']);
 });
 
 Route::get('change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('lang');

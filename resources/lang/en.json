@@ -1,5 +1,7 @@
 {
     "login" : "Login",
     "Welcome to Website!" : "Welcome to Website!",
-    "choose language" : "choose language !"
+    "choose language" : "choose language !",
+    "Your name" : "Your name",
+    "age" : "Age !"
 }
